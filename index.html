@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karnataka Go (karnatakago.in) — Travel, BBPS & Enterprise Supplies Portal</title>
+    <meta name="description" content="Karnataka Go (karnatakago.in) — Universal Travel OTA, BBPS Utilities Clearance & B2B Industrial Supplies Portal." />
+    <meta property="og:title" content="Karnataka Go (karnatakago.in) — Travel, BBPS & Enterprise Supplies Portal" />
+    <meta property="og:description" content="Karnataka Go (karnatakago.in) — Universal Travel OTA, BBPS Utilities Clearance & B2B Industrial Supplies Portal." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        // Prevent "Cannot set property fetch of #<Window> which has only a getter"
+        // caused by browser extensions attempting to monkey-patch window.fetch
+        try {
+          var originalFetch = window.fetch;
+          var fetchInstance = originalFetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return fetchInstance;
+            },
+            set: function(fn) {
+              fetchInstance = fn;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          try {
+            var protoFetch = Window.prototype.fetch;
+            Object.defineProperty(Window.prototype, 'fetch', {
+              get: function() {
+                return protoFetch;
+              },
+              set: function(fn) {
+                protoFetch = fn;
+              },
+              configurable: true,
+              enumerable: true
+            });
+          } catch (err) {}
+        }
+
+        // Suppress uncaught errors from external browser extensions
+        window.addEventListener('error', function(event) {
+          if (
+            (event.filename && (event.filename.indexOf('chrome-extension://') !== -1 || event.filename.indexOf('moz-extension://') !== -1)) ||
+            (event.message && event.message.indexOf('Cannot set property fetch') !== -1)
+          ) {
+            event.preventDefault();
+            if (typeof event.stopImmediatePropagation === 'function') {
+              event.stopImmediatePropagation();
+            }
+            return true;
+          }
+        }, true);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

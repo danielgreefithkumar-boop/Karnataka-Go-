@@ -1,0 +1,6 @@
+{
+  "name": "Karnataka Supplies Hub",
+  "description": "Universal Commerce, Travel OTA, BBPS Utilities Clearance & B2B Industrial Supplies Portal with Master Operator Desk",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
